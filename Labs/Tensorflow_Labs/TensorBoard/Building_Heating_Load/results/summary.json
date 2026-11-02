@@ -1,0 +1,55 @@
+{
+  "selected": {
+    "run": "trial-02",
+    "units": 32,
+    "dropout": 0.1,
+    "learning_rate": 0.001,
+    "epochs": 23,
+    "best_epoch": 3,
+    "validation_mae": 2.6918093207478524,
+    "validation_rmse": 3.9041653652166803,
+    "validation_r2": 0.6815419685880357
+  },
+  "test": {
+    "mae": 2.840750702619553,
+    "rmse": 4.0029044805206775,
+    "r2": 0.7628777434761902
+  },
+  "mean_baseline_test": {
+    "mae": 8.10460974702381,
+    "rmse": 8.652466819348632,
+    "r2": -0.10790303104116972
+  },
+  "split_rows": {
+    "train": 448,
+    "validation": 128,
+    "test": 192
+  },
+  "split_geometries": {
+    "train": [
+      0.64,
+      0.69,
+      0.71,
+      0.74,
+      0.76,
+      0.79,
+      0.98
+    ],
+    "validation": [
+      0.66,
+      0.82
+    ],
+    "test": [
+      0.62,
+      0.86,
+      0.9
+    ]
+  },
+  "seed": 42,
+  "data_sha256": "0089fcffc1415e41e2ff63730cca5280efe54fc43d722dfde1b0aaa808e35dc4",
+  "environment": {
+    "python": "3.11.18",
+    "platform": "Linux-5.15.0-198-generic-aarch64-with-glibc2.41",
+    "tensorflow": "2.20.0"
+  }
+}

@@ -1,0 +1,6 @@
+PASS: all 768 rows assigned once; 12 geometries isolated across splits
+PASS: preprocessing and target scaling fitted using training rows
+PASS: eight trials; selection uses minimum validation MAE
+PASS: saved model reproduces recorded predictions and test metrics
+PASS: eight TensorBoard HParams sessions contain the recorded validation metrics
+All verification checks passed.
