@@ -1,0 +1,5 @@
+forecast for 2025-07-02 00:00:00: 24.67 C (actual 27.70 C)
+forecast for 2025-07-02 01:00:00: 24.27 C (actual 25.50 C)
+forecast for 2025-07-02 02:00:00: 23.02 C (actual 24.40 C)
+forecast for 2025-07-02 03:00:00: 22.86 C (actual 23.60 C)
+forecast for 2025-07-02 04:00:00: 21.82 C (actual 23.50 C)

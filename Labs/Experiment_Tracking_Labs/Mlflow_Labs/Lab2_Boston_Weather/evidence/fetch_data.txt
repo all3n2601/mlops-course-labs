@@ -1,0 +1,3 @@
+rows=26304, 2023-01-01 00:00:00 -> 2025-12-31 23:00:00
+missing values=0, gaps in hourly index=0
+saved data/boston_hourly_2023_2025.csv

@@ -1,0 +1,7 @@
+train=13104 val=4416 test=8736, features=21, mean temp=11.0 C
+persistence: val RMSE = 3.662, test RMSE = 4.430
+random forest: val RMSE = 3.520, R2 = 0.861 (run b4fb5215adfc4ddf9d058c0f03f3fafa)
+best params = {'max_iter': 150, 'learning_rate': 0.03501992591956604, 'max_depth': 9, 'l2_regularization': 1.1511361316483242}
+tuned val RMSE = 3.235, R2 = 0.883
+tuned test RMSE = 3.746, MAE = 2.889, R2 = 0.875 (persistence test RMSE 4.430)
+version 2 (RMSE 3.2348) did not beat current 'production' (RMSE 3.2348), alias unchanged
