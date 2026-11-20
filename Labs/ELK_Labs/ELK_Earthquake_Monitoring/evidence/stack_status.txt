@@ -1,0 +1,22 @@
+# docker compose ps
+NAME                IMAGE                  STATUS
+elk-elasticsearch   elasticsearch:7.16.2   Up 25 minutes (healthy)
+elk-kibana          kibana:7.16.2          Up 15 minutes
+elk-logstash        logstash:7.16.2        Up 2 minutes
+
+# cluster health
+{'status': 'green', 'number_of_nodes': 1, 'active_shards': 13, 'unassigned_shards': 0}
+
+# indices
+index       health docs.count store.size
+ml-drift    green          71    191.3kb
+ml-training green           8     91.3kb
+earthquakes green       29068     31.2mb
+
+# kibana
+version 7.16.2 status green
+
+# memory
+elk-logstash: 694.1MiB / 7.748GiB
+elk-kibana: 489.2MiB / 7.748GiB
+elk-elasticsearch: 1021MiB / 7.748GiB

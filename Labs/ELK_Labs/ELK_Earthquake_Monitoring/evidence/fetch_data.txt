@@ -1,0 +1,26 @@
+2025-01-01: 2258 events
+2025-02-01: 2186 events
+2025-03-01: 2238 events
+2025-04-01: 2141 events
+2025-05-01: 2022 events
+2025-06-01: 2010 events
+2025-07-01: 4181 events
+2025-08-01: 3082 events
+2025-09-01: 2340 events
+2025-10-01: 2016 events
+2025-11-01: 1948 events
+2025-12-01: 2890 events
+saved data/usgs_earthquakes_2025.csv: 29068 earthquakes, 2025-01-01T00:13:22.650Z -> 2025-12-31T23:57:05.079Z
+missing values per column:
+time            0
+latitude        0
+longitude       0
+depth           0
+mag             0
+magType         0
+nst          1294
+gap          1296
+dmin         1299
+rms             0
+place           0
+status          0

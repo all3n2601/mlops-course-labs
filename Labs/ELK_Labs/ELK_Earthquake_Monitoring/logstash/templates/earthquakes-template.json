@@ -1,0 +1,20 @@
+{
+  "index_patterns": ["earthquakes*"],
+  "settings": { "number_of_shards": 1, "number_of_replicas": 0 },
+  "mappings": {
+    "properties": {
+      "@timestamp": { "type": "date" },
+      "location": { "type": "geo_point" },
+      "mag": { "type": "float" },
+      "depth": { "type": "float" },
+      "gap": { "type": "float" },
+      "dmin": { "type": "float" },
+      "rms": { "type": "float" },
+      "nst": { "type": "integer" },
+      "mag_class": { "type": "keyword" },
+      "magType": { "type": "keyword" },
+      "status": { "type": "keyword" },
+      "place": { "type": "text", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } }
+    }
+  }
+}

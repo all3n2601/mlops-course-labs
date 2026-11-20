@@ -1,0 +1,71 @@
+2026-11-20T08:13:25Z - INFO - Replay started | ks_threshold: 0.2
+2026-11-20T08:13:25Z - INFO - Batch 1 week 2025-06-30 | events: 423 | f1: 0.7528 | mean_mag: 3.991 | share_m45: 0.345
+2026-11-20T08:13:25Z - INFO - Batch 2 week 2025-07-07 | events: 450 | f1: 0.7673 | mean_mag: 3.943 | share_m45: 0.298
+2026-11-20T08:13:25Z - INFO - Batch 3 week 2025-07-14 | events: 1215 | f1: 0.7657 | mean_mag: 3.591 | share_m45: 0.177
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 3 week 2025-07-14 | feature: latitude | ks_stat: 0.5421 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 3 week 2025-07-14 | feature: longitude | ks_stat: 0.3744 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 3 week 2025-07-14 | feature: gap | ks_stat: 0.3192 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 3 week 2025-07-14 | feature: dmin | ks_stat: 0.3139 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 4 week 2025-07-21 | events: 794 | f1: 0.7485 | mean_mag: 3.912 | share_m45: 0.236
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 4 week 2025-07-21 | feature: latitude | ks_stat: 0.4203 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 4 week 2025-07-21 | feature: longitude | ks_stat: 0.3013 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 4 week 2025-07-21 | feature: gap | ks_stat: 0.2183 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 5 week 2025-07-28 | events: 1874 | f1: 0.6847 | mean_mag: 4.377 | share_m45: 0.469
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 5 week 2025-07-28 | feature: latitude | ks_stat: 0.5608 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 5 week 2025-07-28 | feature: longitude | ks_stat: 0.6912 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 5 week 2025-07-28 | feature: gap | ks_stat: 0.2310 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 5 week 2025-07-28 | feature: dmin | ks_stat: 0.2560 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 6 week 2025-08-04 | events: 827 | f1: 0.6900 | mean_mag: 4.071 | share_m45: 0.302
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 6 week 2025-08-04 | feature: latitude | ks_stat: 0.4291 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 6 week 2025-08-04 | feature: longitude | ks_stat: 0.4767 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 6 week 2025-08-04 | feature: gap | ks_stat: 0.2253 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 7 week 2025-08-11 | events: 610 | f1: 0.7929 | mean_mag: 4.010 | share_m45: 0.302
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 7 week 2025-08-11 | feature: latitude | ks_stat: 0.2983 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 7 week 2025-08-11 | feature: longitude | ks_stat: 0.3025 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 8 week 2025-08-18 | events: 546 | f1: 0.7616 | mean_mag: 4.010 | share_m45: 0.328
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 8 week 2025-08-18 | feature: latitude | ks_stat: 0.2174 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 8 week 2025-08-18 | feature: longitude | ks_stat: 0.2256 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 9 week 2025-08-25 | events: 476 | f1: 0.7932 | mean_mag: 3.911 | share_m45: 0.275
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 9 week 2025-08-25 | feature: latitude | ks_stat: 0.2147 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 10 week 2025-09-01 | events: 601 | f1: 0.6875 | mean_mag: 3.864 | share_m45: 0.278
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 10 week 2025-09-01 | feature: latitude | ks_stat: 0.2287 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 11 week 2025-09-08 | events: 543 | f1: 0.7232 | mean_mag: 3.866 | share_m45: 0.276
+2026-11-20T08:13:25Z - INFO - Batch 12 week 2025-09-15 | events: 599 | f1: 0.7059 | mean_mag: 4.282 | share_m45: 0.424
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 12 week 2025-09-15 | feature: latitude | ks_stat: 0.3335 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 12 week 2025-09-15 | feature: longitude | ks_stat: 0.4378 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 13 week 2025-09-22 | events: 465 | f1: 0.6915 | mean_mag: 4.164 | share_m45: 0.383
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 13 week 2025-09-22 | feature: longitude | ks_stat: 0.2126 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 14 week 2025-09-29 | events: 482 | f1: 0.7809 | mean_mag: 4.217 | share_m45: 0.407
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 14 week 2025-09-29 | feature: longitude | ks_stat: 0.2764 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 15 week 2025-10-06 | events: 533 | f1: 0.7760 | mean_mag: 4.201 | share_m45: 0.415
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 15 week 2025-10-06 | feature: longitude | ks_stat: 0.2407 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 16 week 2025-10-13 | events: 438 | f1: 0.7793 | mean_mag: 4.138 | share_m45: 0.372
+2026-11-20T08:13:25Z - INFO - Batch 17 week 2025-10-20 | events: 375 | f1: 0.7489 | mean_mag: 4.081 | share_m45: 0.352
+2026-11-20T08:13:25Z - INFO - Batch 18 week 2025-10-27 | events: 392 | f1: 0.7401 | mean_mag: 4.099 | share_m45: 0.334
+2026-11-20T08:13:25Z - INFO - Batch 19 week 2025-11-03 | events: 521 | f1: 0.7163 | mean_mag: 4.273 | share_m45: 0.430
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 19 week 2025-11-03 | feature: latitude | ks_stat: 0.2540 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 19 week 2025-11-03 | feature: longitude | ks_stat: 0.3717 | p_value: 0.000000
+2026-11-20T08:13:25Z - WARNING - Data drift detected in batch 19 week 2025-11-03 | feature: dmin | ks_stat: 0.2402 | p_value: 0.000000
+2026-11-20T08:13:25Z - INFO - Batch 20 week 2025-11-10 | events: 407 | f1: 0.7932 | mean_mag: 4.030 | share_m45: 0.317
+2026-11-20T08:13:25Z - INFO - Batch 21 week 2025-11-17 | events: 434 | f1: 0.6916 | mean_mag: 3.906 | share_m45: 0.272
+2026-11-20T08:13:25Z - INFO - Batch 22 week 2025-11-24 | events: 457 | f1: 0.7304 | mean_mag: 3.837 | share_m45: 0.256
+2026-11-20T08:13:26Z - INFO - Batch 23 week 2025-12-01 | events: 842 | f1: 0.6935 | mean_mag: 3.536 | share_m45: 0.163
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 23 week 2025-12-01 | feature: latitude | ks_stat: 0.4705 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 23 week 2025-12-01 | feature: longitude | ks_stat: 0.3445 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 23 week 2025-12-01 | feature: depth | ks_stat: 0.4245 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 23 week 2025-12-01 | feature: gap | ks_stat: 0.2206 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 23 week 2025-12-01 | feature: dmin | ks_stat: 0.3634 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 23 week 2025-12-01 | feature: rms | ks_stat: 0.2910 | p_value: 0.000000
+2026-11-20T08:13:26Z - INFO - Batch 24 week 2025-12-08 | events: 801 | f1: 0.7791 | mean_mag: 3.484 | share_m45: 0.170
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 24 week 2025-12-08 | feature: latitude | ks_stat: 0.4146 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 24 week 2025-12-08 | feature: longitude | ks_stat: 0.2948 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 24 week 2025-12-08 | feature: depth | ks_stat: 0.3759 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 24 week 2025-12-08 | feature: gap | ks_stat: 0.2289 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 24 week 2025-12-08 | feature: dmin | ks_stat: 0.3246 | p_value: 0.000000
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 24 week 2025-12-08 | feature: rms | ks_stat: 0.2461 | p_value: 0.000000
+2026-11-20T08:13:26Z - INFO - Batch 25 week 2025-12-15 | events: 538 | f1: 0.7309 | mean_mag: 3.777 | share_m45: 0.249
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 25 week 2025-12-15 | feature: latitude | ks_stat: 0.2092 | p_value: 0.000000
+2026-11-20T08:13:26Z - INFO - Batch 26 week 2025-12-22 | events: 490 | f1: 0.7248 | mean_mag: 3.750 | share_m45: 0.233
+2026-11-20T08:13:26Z - INFO - Batch 27 week 2025-12-29 | events: 195 | f1: 0.7654 | mean_mag: 3.652 | share_m45: 0.210
+2026-11-20T08:13:26Z - WARNING - Data drift detected in batch 27 week 2025-12-29 | feature: latitude | ks_stat: 0.2299 | p_value: 0.000000
+2026-11-20T08:13:26Z - INFO - Replay finished

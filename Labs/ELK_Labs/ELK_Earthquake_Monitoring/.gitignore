@@ -1,0 +1,6 @@
+# The repo-level .gitignore ignores logs/, pipeline/, *.json and *.log.
+# This lab needs them: they are the Logstash input logs, the pipeline and the index templates.
+!logs/
+!*.log
+!pipeline/
+!*.json

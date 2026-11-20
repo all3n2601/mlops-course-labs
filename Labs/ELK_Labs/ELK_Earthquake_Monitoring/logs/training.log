@@ -1,0 +1,8 @@
+2026-11-20T08:13:20Z - INFO - Starting training | train_rows: 10743 | val_rows: 1997 | replay_rows: 16328 | share_m45: 0.276
+2026-11-20T08:13:20Z - INFO - Training run 1 finished | model: logistic_regression | val_f1: 0.7380 | val_precision: 0.8069 | val_recall: 0.6799 | val_fpr: 0.0623 | val_fnr: 0.3201
+2026-11-20T08:13:20Z - INFO - Training run 2 finished | model: logistic_regression | val_f1: 0.7360 | val_precision: 0.8047 | val_recall: 0.6781 | val_fpr: 0.0630 | val_fnr: 0.3219
+2026-11-20T08:13:20Z - INFO - Training run 3 finished | model: gradient_boosting | val_f1: 0.7689 | val_precision: 0.8302 | val_recall: 0.7161 | val_fpr: 0.0561 | val_fnr: 0.2839
+2026-11-20T08:13:21Z - INFO - Training run 4 finished | model: gradient_boosting | val_f1: 0.7899 | val_precision: 0.8207 | val_recall: 0.7613 | val_fpr: 0.0637 | val_fnr: 0.2387
+2026-11-20T08:13:23Z - INFO - Training run 5 finished | model: gradient_boosting | val_f1: 0.7907 | val_precision: 0.8182 | val_recall: 0.7649 | val_fpr: 0.0651 | val_fnr: 0.2351
+2026-11-20T08:13:25Z - INFO - Training run 6 finished | model: gradient_boosting | val_f1: 0.7899 | val_precision: 0.8166 | val_recall: 0.7649 | val_fpr: 0.0658 | val_fnr: 0.2351
+2026-11-20T08:13:25Z - INFO - Selected run 5 as the production model | val_f1: 0.7907
