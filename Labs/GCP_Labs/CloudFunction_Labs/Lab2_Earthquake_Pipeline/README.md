@@ -35,9 +35,29 @@ gs://BUCKET/raw/*.csv ──(Eventarc, object finalized)──> lab6-process-dat
 - The anonymous call to the serving function returned 403, the authenticated call 200, and a call with missing fields 400 (`evidence/cloud_evidence.txt`).
 - Running the same code locally with the same library versions gives identical metrics (`local_test.py`).
 
+### Figures
+
+![Model results](images/model_results.png)
+
+*Left: the three configurations on the validation month, the best one in blue. Right: the selected model against the logistic regression baseline on July to December, which the model never saw. Drawn from `evidence/metrics.json`, which the training function wrote to the bucket.*
+
+![Data overview](images/data_overview.png)
+
+*Left: events per month and how the time split uses them. July is by far the busiest month. In the ELK lab I traced that to the aftershocks of the M8.8 Kamchatka earthquake and a swarm near Sand Point, Alaska, so the test months are not like the training months. Right: the readings that are missing (`gap`, `dmin`, `nst`). The model has to handle those, which is why the sample event with few readings in the workflow run still gets a prediction. Drawn from `data/usgs_earthquakes_2025.csv` and `evidence/quality_report.json`.*
+
+![Workflow run](images/workflow_run.png)
+
+*The result of the Workflow run in the cloud. It is the saved output of `gcloud workflows run`, laid out as an image (`evidence/workflow_run.yaml`).*
+
+![Deployed resources and endpoint checks](images/cloud_evidence.png)
+
+*The deployed functions, topic and workflow, and the three calls to the serving function: anonymous (403), with a login (200) and with missing fields (400). It is the saved text in `evidence/cloud_evidence.txt`, laid out as an image.*
+
+The charts and the two command-output images are drawn by `make_figures.py` from the saved evidence and the data, so no number in them was typed by hand. They are not screenshots of the Google Cloud console.
+
 ## Run it
 
-`deploy.sh` has every command I ran. It needs a project with billing and `PROJECT`, `ACCOUNT` and `PROJECT_NUMBER` set. `python local_test.py` runs the three stages' logic offline (needs the pinned requirements, Python 3.12).
+`deploy.sh` has every command I ran. It needs a project with billing and `PROJECT`, `ACCOUNT` and `PROJECT_NUMBER` set. `python make_figures.py` redraws the figures (needs matplotlib). `python local_test.py` runs the three stages' logic offline (needs the pinned requirements, Python 3.12).
 
 ## Problems I hit and what I did about them
 
@@ -52,6 +72,6 @@ gs://BUCKET/raw/*.csv ──(Eventarc, object finalized)──> lab6-process-dat
 - One dataset and one run. The model is a toy, as in the other labs, and the lab is about the pipeline.
 - The first training run after a deploy is a cold start. I did not measure cold start times or costs.
 - The storage trigger fires for every object in the bucket, so the function ignores anything outside `raw/*.csv`. The Workflow's re-upload overwrites the raw file with an identical copy.
-- No console screenshots: I worked from the command line, so the evidence is command output.
+- No console screenshots: I worked from the command line and deleted the resources afterwards, so the evidence is saved command output and charts drawn from it.
 - I did not set a budget alert, because that needs another API.
 - The functions and workflow no longer exist, so the cloud run cannot be repeated without redeploying. `deploy.sh` does that.
