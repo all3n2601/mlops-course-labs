@@ -1,0 +1,5 @@
+endTime: '2026-11-22T17:55:16.695909636Z'
+name: projects/195684290621/locations/us-central1/workflows/lab6-earthquake-pipeline/executions/9ef06661-fd24-4544-8f12-d7a0b8799213
+result: '{"predictions":[{"predicted_m45_or_higher":true,"probability_m45_or_higher":0.9638},{"predicted_m45_or_higher":false,"probability_m45_or_higher":0.0049}],"selected_model":"hgb_depth6","test":{"f1":0.7455,"precision":0.8413,"recall":0.6692}}'
+startTime: '2026-11-22T17:54:55.814196653Z'
+state: SUCCEEDED

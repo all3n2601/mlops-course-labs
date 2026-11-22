@@ -1,0 +1,71 @@
+# Orchestrates the whole pipeline end to end.
+# 1. re-uploads (copies) the raw CSV in place, which fires the Cloud Storage trigger
+# 2. waits until models/metrics.json is newer than the start of this run
+# 3. reads the metrics and calls the authenticated predict function with two sample events
+main:
+  params: [args]
+  steps:
+  - init:
+      assign:
+        - bucket: ${args.bucket}
+        - raw_object: ${text.url_encode(args.raw_object)}
+        - metrics_object: "models%2Fmetrics.json"
+        - started: ${sys.now()}
+        - attempts: 0
+  - retrigger_pipeline:
+      call: googleapis.storage.v1.objects.copy
+      args:
+        sourceBucket: ${bucket}
+        sourceObject: ${raw_object}
+        destinationBucket: ${bucket}
+        destinationObject: ${raw_object}
+  - wait_for_new_model:
+      try:
+        call: googleapis.storage.v1.objects.get
+        args:
+          bucket: ${bucket}
+          object: ${metrics_object}
+        result: metrics_meta
+      except:
+        as: e
+        steps:
+          - not_there_yet:
+              assign:
+                - metrics_meta: {"updated": "1970-01-01T00:00:00Z"}
+  - check_model_is_fresh:
+      switch:
+        - condition: ${time.parse(metrics_meta.updated) > started}
+          next: read_metrics
+        - condition: ${attempts >= 30}
+          raise: "timed out after 5 minutes waiting for models/metrics.json"
+  - pause:
+      call: sys.sleep
+      args:
+        seconds: 10
+  - count_attempt:
+      assign:
+        - attempts: ${attempts + 1}
+      next: wait_for_new_model
+  - read_metrics:
+      call: googleapis.storage.v1.objects.get
+      args:
+        bucket: ${bucket}
+        object: ${metrics_object}
+        alt: media
+      result: metrics
+  - predict_sample_events:
+      call: http.post
+      args:
+        url: ${args.predict_url}
+        auth:
+          type: OIDC
+        body:
+          events:
+            - {latitude: 52.9, longitude: 160.0, depth: 20, gap: 80, dmin: 1.1, rms: 0.9, nst: 150}
+            - {latitude: 34.0, longitude: -117.4, depth: 8, rms: 0.2}
+      result: predictions
+  - done:
+      return:
+        selected_model: ${metrics.selected}
+        test: ${metrics.test}
+        predictions: ${predictions.body.predictions}

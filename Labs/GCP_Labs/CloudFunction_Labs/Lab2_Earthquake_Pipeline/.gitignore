@@ -1,0 +1,8 @@
+# keep the evidence and data, never any credentials
+*.pem
+*.key
+service-account*.json
+.env
+
+# the repo-level .gitignore hides *.json; these are the lab's evidence
+!evidence/*.json

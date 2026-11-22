@@ -1,0 +1,16 @@
+buckets:
+agentwatch-dvc
+service accounts:
+agentwatch-512815@appspot.gserviceaccount.com
+195684290621-compute@developer.gserviceaccount.com
+agentwatch-model-ci@agentwatch-512815.iam.gserviceaccount.com
+topics:
+subscriptions:
+functions:
+cloud run:
+eventarc:
+workflows:
+artifact repos:
+agentwatch-models
+lab6 anywhere in IAM policy:
+0

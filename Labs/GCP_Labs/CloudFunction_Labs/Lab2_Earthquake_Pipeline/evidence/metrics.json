@@ -1,0 +1,50 @@
+{
+  "selected": "hgb_depth6",
+  "validation_runs": {
+    "logreg_c1": {
+      "f1": 0.738,
+      "precision": 0.8069,
+      "recall": 0.6799
+    },
+    "hgb_depth3": {
+      "f1": 0.8064,
+      "precision": 0.8353,
+      "recall": 0.7794
+    },
+    "hgb_depth6": {
+      "f1": 0.8081,
+      "precision": 0.8249,
+      "recall": 0.792
+    }
+  },
+  "test": {
+    "f1": 0.7455,
+    "precision": 0.8413,
+    "recall": 0.6692
+  },
+  "test_logreg_baseline": {
+    "f1": 0.6315,
+    "precision": 0.8011,
+    "recall": 0.5212
+  },
+  "rows": {
+    "train": 10743,
+    "validation": 1997,
+    "test": 16328
+  },
+  "share_m45_train": 0.2755,
+  "share_m45_test": 0.309,
+  "features": [
+    "latitude",
+    "longitude",
+    "depth",
+    "gap",
+    "dmin",
+    "rms",
+    "nst"
+  ],
+  "magnitude_cutoff": 4.5,
+  "train_seconds": 1.3,
+  "trained_at_unix": 1795369959,
+  "source_file": "gs://lab6-eq-pipeline-195684290621/processed/clean.csv"
+}

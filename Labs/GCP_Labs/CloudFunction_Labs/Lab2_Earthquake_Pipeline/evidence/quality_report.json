@@ -1,0 +1,20 @@
+{
+  "rows_in": 29068,
+  "dropped_missing_core_field": 0,
+  "dropped_out_of_range": 0,
+  "dropped_duplicates": 0,
+  "rows_out": 29068,
+  "time_min": "2025-01-01T00:13:22.650000+00:00",
+  "time_max": "2025-12-31T23:57:05.079000+00:00",
+  "share_m45_or_higher": 0.2944,
+  "missing_by_feature": {
+    "latitude": 0,
+    "longitude": 0,
+    "depth": 0,
+    "gap": 1296,
+    "dmin": 1299,
+    "rms": 0,
+    "nst": 1294
+  },
+  "source": "gs://lab6-eq-pipeline-195684290621/raw/usgs_earthquakes_2025.csv"
+}

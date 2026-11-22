@@ -1,0 +1,20 @@
+## deployed lab6 resources (2026-11-22T17:55:43Z)
+NAME               STATE   ENVIRONMENT  AVAILABLE_MEMORY  TIMEOUT_SECONDS
+lab6-predict       ACTIVE  GEN_2        512Mi             60
+lab6-process-data  ACTIVE  GEN_2        1Gi               300
+lab6-train-model   ACTIVE  GEN_2        1Gi               540
+lab6-model-training-trigger
+eventarc-us-central1-lab6-process-data-271317-660
+NAME                      STATE
+lab6-earthquake-pipeline  ACTIVE
+
+## anonymous call to predict (expect 403)
+HTTP 403
+
+## authenticated call (expect predictions)
+{"predictions": [{"probability_m45_or_higher": 0.9638, "predicted_m45_or_higher": true}, {"probability_m45_or_higher": 0.0049, "predicted_m45_or_higher": false}]}
+HTTP 200
+
+## bad input (expect 400)
+{"error": "event 0 is missing ['longitude', 'depth']"}
+HTTP 400
